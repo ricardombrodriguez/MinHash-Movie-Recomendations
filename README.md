@@ -26,6 +26,11 @@ The application aks the user to insert a string and it presents a list of movies
 **4th option:**
 The application closes.
 
+## More information
+
+The *read_info.m* file will read the *u.data* dataset and store all the crucial information needed to perform all of the user options. It stores the users and movies information as well as the users and movies MinHash. The *DJB31MA.m* file is the implementation of the hash function DJB31MA that returns an hash code. The *main.m* file uses the information generated in the *read_info.m* file to perform all of the options selected by the user.
+
+
 Final grade: 17/20
 
 ## Authors
