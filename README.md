@@ -11,6 +11,7 @@ The application must consider a list of users identified by an ID and a list of 
 ## User options
 
 **1st option:**
+
 The application lists the titles of the movies the user already saw (one title per line).
 
 **2nd option:**
@@ -21,14 +22,17 @@ The application asks the user to select a genre for which he wants to get movie 
 And then the application determines, using the Jaccard Index, which of the 942 other users is the most similar to the current user (in terms of similar movies saw by each other) and, finally, it presents all of the movies of the selected genre that the most similar user saw but the current user didn't. If no movie suggestion is found, the application must tell the user it couldn't found any suggestion.
 
 **3rd option:**
+
 The application aks the user to insert a string and it presents a list of movies (5 movies max.), one per line, of the ones whose title is the most similar to the user's input and also indicating the estimative Jaccard distance between the movie and the user's string. This option is independent of the current user ID. The movie list must be presented in descendent order of Jaccard distance and it should only show movies whose distance is less or equal than 0.99. In this option, we have to develop a MinHash method adequate to the similarity of character vectors, choosing both the shingle size and the number of hash functions in a reasoned way.
 
 **4th option:**
+
 The application closes.
 
 ## More information
 
 The *read_info.m* file will read the *u.data* dataset and store all the crucial information needed to perform all of the user options. It stores the users and movies information as well as the users and movies MinHash. The *DJB31MA.m* file is the implementation of the hash function DJB31MA that returns an hash code. The *main.m* file uses the information generated in the *read_info.m* file to perform all of the options selected by the user.
+
 
 
 Final grade: 17/20
