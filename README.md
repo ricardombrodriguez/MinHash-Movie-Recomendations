@@ -15,7 +15,9 @@ The application lists the titles of the movies the user already saw (one title p
 
 **2nd option:**
 The application asks the user to select a genre for which he wants to get movie suggestions:
+
 1- Action, 2- Adventure, 3- Animation, 4- Children’s, 5- Comedy, 6- Crime, 7- Documentary, 8- Drama, 9- Fantasy, 10- Film-Noir, 11- Horror, 12- Musical, 13- Mystery, 14- Romance, 15- Sci-Fi, 16- Thriller, 17- War, 18- Western
+
 And then the application determines, using the Jaccard Index, which of the 942 other users is the most similar to the current user (in terms of similar movies saw by each other) and, finally, it presents all of the movies of the selected genre that the most similar user saw but the current user didn't. If no movie suggestion is found, the application must tell the user it couldn't found any suggestion.
 
 **3rd option:**
